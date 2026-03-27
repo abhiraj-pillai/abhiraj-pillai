@@ -1,12 +1,20 @@
 import { NextRequest, NextResponse } from "next/server";
-import Anthropic from "@anthropic-ai/sdk";
+import OpenAI from "openai";
 import { getCharacter } from "@/lib/characters";
 import { ChatRequest } from "@/lib/types";
 
-const anthropic = new Anthropic();
+function getClient() {
+  const apiKey = process.env.XAI_API_KEY;
+  if (!apiKey) {
+    throw new Error("XAI_API_KEY not configured. Add it to .env.local");
+  }
+  return new OpenAI({ apiKey, baseURL: "https://api.x.ai/v1" });
+}
 
 export async function POST(req: NextRequest) {
   try {
+    const client = getClient();
+
     const body: ChatRequest = await req.json();
     const { characterId, message, history } = body;
 
@@ -20,23 +28,22 @@ export async function POST(req: NextRequest) {
 
     const recentHistory = history.slice(-10);
 
-    const messages = [
+    const messages: OpenAI.Chat.ChatCompletionMessageParam[] = [
+      { role: "system", content: character.personality },
       ...recentHistory.map((msg) => ({
         role: msg.role as "user" | "assistant",
         content: msg.content,
       })),
-      { role: "user" as const, content: message },
+      { role: "user", content: message },
     ];
 
-    const response = await anthropic.messages.create({
-      model: "claude-sonnet-4-20250514",
+    const response = await client.chat.completions.create({
+      model: "grok-3-mini",
       max_tokens: 150,
-      system: character.personality,
       messages,
     });
 
-    const textContent = response.content.find((block) => block.type === "text");
-    const responseText = textContent ? textContent.text : "...";
+    const responseText = response.choices[0]?.message?.content || "...";
 
     return NextResponse.json({ response: responseText });
   } catch (error) {
