@@ -4,11 +4,11 @@ import { getCharacter } from "@/lib/characters";
 import { ChatRequest } from "@/lib/types";
 
 function getClient() {
-  const apiKey = process.env.XAI_API_KEY;
+  const apiKey = process.env.GROQ_API_KEY;
   if (!apiKey) {
-    throw new Error("XAI_API_KEY not configured. Add it to .env.local");
+    throw new Error("GROQ_API_KEY not configured. Add it to .env.local");
   }
-  return new OpenAI({ apiKey, baseURL: "https://api.x.ai/v1" });
+  return new OpenAI({ apiKey, baseURL: "https://api.groq.com/openai/v1" });
 }
 
 export async function POST(req: NextRequest) {
@@ -38,7 +38,7 @@ export async function POST(req: NextRequest) {
     ];
 
     const response = await client.chat.completions.create({
-      model: "grok-3-mini",
+      model: "llama-3.3-70b-versatile",
       max_tokens: 150,
       messages,
     });
