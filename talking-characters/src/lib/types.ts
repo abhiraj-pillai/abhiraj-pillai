@@ -1,13 +1,21 @@
 export interface VoiceConfig {
   pitch: number;
   rate: number;
+  volume: number;
   voiceName?: string;
+  voiceGender: "male" | "female";
+  effects?: {
+    distortion?: number;    // 0-1, for raspy/gritty voices (Rick)
+    tremolo?: number;       // 0-1, for shaky voices (Morty)
+    echo?: number;          // 0-1, for deep/reverb voices (Zoro)
+  };
 }
 
 export interface Character {
   id: string;
   name: string;
   emoji: string;
+  image: string;
   description: string;
   color: string;
   bgGradient: string;

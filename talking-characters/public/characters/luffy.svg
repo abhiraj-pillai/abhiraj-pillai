@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Monkey D. Luffy -->
+  <defs>
+    <radialGradient id="luffy-bg" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#e63946"/>
+      <stop offset="100%" stop-color="#1d3557"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="95" fill="url(#luffy-bg)" stroke="#e63946" stroke-width="3"/>
+  <!-- Straw Hat -->
+  <ellipse cx="100" cy="48" rx="55" ry="16" fill="#f4d03f"/>
+  <ellipse cx="100" cy="42" rx="42" ry="25" fill="#f4d03f"/>
+  <rect x="58" y="42" width="84" height="8" fill="#f4d03f"/>
+  <!-- Hat band -->
+  <rect x="58" y="42" width="84" height="7" fill="#e63946" rx="2"/>
+  <!-- Face -->
+  <ellipse cx="100" cy="95" rx="42" ry="45" fill="#fdd9b5"/>
+  <!-- Messy black hair under hat -->
+  <path d="M 60 58 Q 55 70 58 85" fill="#1a1a1a"/>
+  <path d="M 140 58 Q 145 70 142 85" fill="#1a1a1a"/>
+  <path d="M 62 55 Q 70 48 95 55" fill="#1a1a1a"/>
+  <path d="M 138 55 Q 130 48 105 55" fill="#1a1a1a"/>
+  <!-- Eyes - big and round, excited -->
+  <circle cx="82" cy="88" r="12" fill="white" stroke="#333" stroke-width="2"/>
+  <circle cx="118" cy="88" r="12" fill="white" stroke="#333" stroke-width="2"/>
+  <!-- Pupils - big, excited -->
+  <circle cx="84" cy="88" r="7" fill="#333"/>
+  <circle cx="120" cy="88" r="7" fill="#333"/>
+  <!-- Eye shine -->
+  <circle cx="87" cy="85" r="2.5" fill="white"/>
+  <circle cx="123" cy="85" r="2.5" fill="white"/>
+  <!-- Scar under left eye -->
+  <line x1="76" y1="100" x2="72" y2="108" stroke="#c44" stroke-width="2" stroke-linecap="round"/>
+  <!-- BIG grin -->
+  <path d="M 72 112 Q 100 140 128 112" fill="white" stroke="#333" stroke-width="2.5"/>
+  <!-- Teeth line -->
+  <line x1="85" y1="115" x2="85" y2="125" stroke="#ddd" stroke-width="1"/>
+  <line x1="100" y1="115" x2="100" y2="128" stroke="#ddd" stroke-width="1"/>
+  <line x1="115" y1="115" x2="115" y2="125" stroke="#ddd" stroke-width="1"/>
+  <!-- Red vest -->
+  <rect x="68" y="140" width="64" height="40" rx="8" fill="#e63946"/>
+  <line x1="100" y1="140" x2="100" y2="175" stroke="#c42836" stroke-width="2"/>
+</svg>

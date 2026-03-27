@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Rick Sanchez -->
+  <defs>
+    <radialGradient id="rick-bg" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#00b4d8"/>
+      <stop offset="100%" stop-color="#1a6b3a"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="95" fill="url(#rick-bg)" stroke="#00d4f8" stroke-width="3"/>
+  <!-- Head - slightly elongated -->
+  <ellipse cx="100" cy="90" rx="46" ry="52" fill="#c8d8e4"/>
+  <!-- Spiky blue hair -->
+  <path d="M 55 60 L 50 25 L 65 50 L 60 20 L 78 48 L 75 15 L 92 45 L 95 10 L 105 45 L 110 12 L 118 48 L 125 18 L 130 50 L 138 22 L 140 55 L 148 30 L 145 62" fill="#aaddee" stroke="#88bbcc" stroke-width="1"/>
+  <!-- Unibrow -->
+  <path d="M 65 72 Q 100 62 135 72" fill="none" stroke="#88aabb" stroke-width="4" stroke-linecap="round"/>
+  <!-- Eyes - droopy/half-lidded -->
+  <ellipse cx="82" cy="85" rx="14" ry="11" fill="white" stroke="#333" stroke-width="2"/>
+  <ellipse cx="118" cy="85" rx="14" ry="11" fill="white" stroke="#333" stroke-width="2"/>
+  <!-- Pupils -->
+  <circle cx="84" cy="86" r="5" fill="#333"/>
+  <circle cx="120" cy="86" r="5" fill="#333"/>
+  <!-- Droopy eyelids -->
+  <path d="M 68 80 Q 82 76 96 80" fill="#c8d8e4" stroke="none"/>
+  <path d="M 104 80 Q 118 76 132 80" fill="#c8d8e4" stroke="none"/>
+  <!-- Drool/mouth -->
+  <path d="M 82 115 Q 100 125 118 115" fill="none" stroke="#333" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Drool -->
+  <path d="M 108 118 Q 112 135 108 145" fill="none" stroke="#8ed1e8" stroke-width="2" stroke-linecap="round"/>
+  <!-- Lab coat -->
+  <rect x="62" y="142" width="76" height="38" rx="8" fill="#e8e8e8"/>
+  <!-- Lab coat collar -->
+  <path d="M 85 142 L 100 155 L 115 142" fill="none" stroke="#ccc" stroke-width="2"/>
+</svg>
