@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Roronoa Zoro -->
+  <defs>
+    <radialGradient id="zoro-bg" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#2d6a4f"/>
+      <stop offset="100%" stop-color="#1b3a2a"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="95" fill="url(#zoro-bg)" stroke="#40916c" stroke-width="3"/>
+  <!-- Face -->
+  <ellipse cx="100" cy="92" rx="44" ry="48" fill="#fdd9b5"/>
+  <!-- Short green hair -->
+  <ellipse cx="100" cy="58" rx="44" ry="22" fill="#2d6a4f"/>
+  <ellipse cx="70" cy="65" rx="14" ry="16" fill="#2d6a4f"/>
+  <ellipse cx="130" cy="65" rx="14" ry="16" fill="#2d6a4f"/>
+  <!-- Scar over left eye (closed) -->
+  <line x1="70" y1="80" x2="90" y2="95" stroke="#c44" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="70" y1="95" x2="90" y2="80" stroke="#c44" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Left eye - closed/scarred -->
+  <line x1="72" y1="88" x2="88" y2="88" stroke="#333" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Right eye - sharp, intimidating -->
+  <ellipse cx="118" cy="88" rx="11" ry="9" fill="white" stroke="#333" stroke-width="2"/>
+  <circle cx="119" cy="88" r="5" fill="#333"/>
+  <!-- Stern eyebrow -->
+  <line x1="107" y1="76" x2="130" y2="78" stroke="#2d6a4f" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Serious mouth -->
+  <line x1="85" y1="115" x2="115" y2="113" stroke="#333" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Three earrings (left ear) -->
+  <circle cx="56" cy="92" r="3" fill="#f4d03f" stroke="#d4a020" stroke-width="1"/>
+  <circle cx="54" cy="100" r="3" fill="#f4d03f" stroke="#d4a020" stroke-width="1"/>
+  <circle cx="55" cy="108" r="3" fill="#f4d03f" stroke="#d4a020" stroke-width="1"/>
+  <!-- Green haramaki/shirt -->
+  <rect x="66" y="140" width="68" height="40" rx="8" fill="#2d6a4f"/>
+  <!-- Sword handle visible behind -->
+  <rect x="42" y="60" width="5" height="50" rx="2" fill="#8B4513" transform="rotate(-15, 42, 85)"/>
+  <rect x="38" y="58" width="13" height="5" rx="2" fill="#f4d03f" transform="rotate(-15, 42, 60)"/>
+</svg>

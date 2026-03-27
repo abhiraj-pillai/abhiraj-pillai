@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import Image from "next/image";
 import { Character } from "@/lib/types";
 
 interface Props {
@@ -29,21 +30,26 @@ export default function CharacterAvatar({
 
   return (
     <div className="flex flex-col items-center justify-center gap-2">
-      {/* Ambient particles */}
       <div className="relative">
         {/* Glow ring behind character */}
         <div
           className={`absolute inset-0 rounded-full bg-gradient-to-r ${character.color} opacity-20 blur-2xl scale-150`}
         />
 
-        {/* Character emoji */}
+        {/* Character image */}
         <div
-          className={`relative text-[120px] sm:text-[150px] cursor-pointer select-none ${getAnimationClass()} transition-all`}
+          className={`relative w-[160px] h-[160px] sm:w-[200px] sm:h-[200px] cursor-pointer select-none ${getAnimationClass()} transition-all`}
           onClick={handlePoke}
           role="button"
           aria-label={`Poke ${character.name}`}
         >
-          {character.emoji}
+          <Image
+            src={character.image}
+            alt={character.name}
+            fill
+            className="object-contain drop-shadow-2xl"
+            priority
+          />
         </div>
       </div>
 

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Peter Griffin -->
+  <defs>
+    <radialGradient id="peter-bg" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#2d8a4e"/>
+      <stop offset="100%" stop-color="#1a5c32"/>
+    </radialGradient>
+  </defs>
+  <!-- Background -->
+  <circle cx="100" cy="100" r="95" fill="url(#peter-bg)" stroke="#3da863" stroke-width="3"/>
+  <!-- Fat round face -->
+  <ellipse cx="100" cy="95" rx="55" ry="58" fill="#fdd9b5"/>
+  <!-- Chin/jaw -->
+  <ellipse cx="100" cy="130" rx="42" ry="28" fill="#fdd9b5"/>
+  <!-- Glasses - round -->
+  <circle cx="78" cy="82" r="18" fill="white" stroke="#333" stroke-width="3"/>
+  <circle cx="122" cy="82" r="18" fill="white" stroke="#333" stroke-width="3"/>
+  <!-- Glasses bridge -->
+  <line x1="96" y1="82" x2="104" y2="82" stroke="#333" stroke-width="3"/>
+  <!-- Pupils -->
+  <circle cx="80" cy="82" r="5" fill="#333"/>
+  <circle cx="124" cy="82" r="5" fill="#333"/>
+  <!-- Smile -->
+  <path d="M 78 110 Q 100 130 122 110" fill="none" stroke="#333" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Hair tuft -->
+  <path d="M 60 55 Q 55 35 70 40 Q 60 30 75 35" fill="#8B4513" stroke="#6B3410" stroke-width="1"/>
+  <!-- White shirt collar -->
+  <path d="M 60 145 Q 100 165 140 145" fill="white" stroke="#ddd" stroke-width="1"/>
+  <!-- Green button shirt hint -->
+  <rect x="70" y="150" width="60" height="30" rx="5" fill="#2d8a4e"/>
+</svg>

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Character } from "@/lib/types";
 
 interface Props {
@@ -22,9 +23,14 @@ export default function CharacterCard({ character, index }: Props) {
 
         {/* Content */}
         <div className="relative z-10 flex flex-col items-center text-center gap-3">
-          {/* Emoji avatar */}
-          <div className="text-7xl transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-1">
-            {character.emoji}
+          {/* Character image */}
+          <div className="w-24 h-24 relative transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-1">
+            <Image
+              src={character.image}
+              alt={character.name}
+              fill
+              className="object-contain drop-shadow-lg"
+            />
           </div>
 
           {/* Name */}
